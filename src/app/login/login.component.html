@@ -1,0 +1,26 @@
+<div class="main_div">
+<div class="side">
+  <img src="/./assets/image/facebook.svg">
+<h1>Facebook helps you connect and share<br>
+   with the people in your life.</h1>
+
+</div>
+<div class="input">
+<form name="logdata" #logdata="ngForm" (ngSubmit)="login(logdata.value)" class="form">
+<div class="input-group flex-nowrap">
+    <!-- <span class="input-group-text" id="addon-wrapping">@</span> -->
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" name="uname" #uname="ngModel" ngModel>
+  </div>
+  <div class="input-group mb-3">
+    <!-- <span class="input-group-text" id="inputGroup-sizing-default">Password</span> -->
+    <input type="password" class="form-control" aria-label="Sizing example input" placeholder="Password" aria-describedby="inputGroup-sizing-default" name="pword" #pword="ngModel" ngModel>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Log In</button>
+  </div>
+  <div>
+    <button routerLink="/Register" class="btn btn-success">Create New Account</button>
+  </div>
+</form>
+</div>
+</div>

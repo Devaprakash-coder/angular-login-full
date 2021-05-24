@@ -1,0 +1,22 @@
+<div class="container1">
+<form name="data" #data="ngForm" (ngSubmit)="register(data.value);data.resetForm()" class="form">
+<div class="input-group">
+    <!-- <span class="input-group-text">First and last name</span> -->
+    <input type="text" aria-label="First name" class="form-control" name="fname" #fname="ngModel" ngModel placeholder="Firstname">
+  </div>
+  <div class="input-group">
+  <input type="text" aria-label="Last name" class="form-control" placeholder="Lastname" name="lname" #lname="ngModel" ngModel>
+</div>
+  <div class="input-group flex-nowrap">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" name="uname" #uname="ngModel" ngModel>
+    <span class="input-group-text" id="addon-wrapping">@</span> 
+  </div>
+  <div class="input-group mb-3">
+    <!-- <span class="input-group-text" id="inputGroup-sizing-default">Password</span> -->
+    <input type="password" class="form-control" placeholder="Password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="pword" #pword="ngModel" ngModel>
+  </div>
+  <div class=" btn1">
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </div>
+</form>
+</div>
